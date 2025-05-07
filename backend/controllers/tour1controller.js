@@ -24,12 +24,28 @@ exports.createReservation = async (req, res) => {
     res.status(500).json({ message: 'Failed to create reservation', error: error.message });
   }
 };
+
 exports.getAllReservations = async (req, res) => {
-    try {
-      const reservations = await Reservation.find(); // Fetch all reservations
-  
-      res.status(200).json(reservations);
-    } catch (error) {
-      res.status(500).json({ message: 'Failed to fetch reservations', error: error.message });
+  try {
+    const reservations = await Reservation.find(); // Fetch all reservations
+    res.status(200).json(reservations);
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to fetch reservations', error: error.message });
+  }
+};
+
+exports.deleteReservation = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const deleted = await Reservation.findByIdAndDelete(id);
+
+    if (!deleted) {
+      return res.status(404).json({ message: 'Reservation not found' });
     }
-  };
+
+    res.status(200).json({ message: 'Reservation deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to delete reservation', error: error.message });
+  }
+};

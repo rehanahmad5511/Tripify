@@ -6,6 +6,12 @@ const tourController = require('../controllers/tour1controller');
 router.post('/tourReservation', tourController.createReservation);
 router.get('/tourReservations', tourController.getAllReservations);
 
+
+
+
+router.delete('/tourReservations/:id', tourController.deleteReservation);
+
+
 module.exports = router;
 
 

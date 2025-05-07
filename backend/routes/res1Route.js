@@ -11,7 +11,11 @@ router.get("/tourReservations", getAllReservations);
 // 🛑 Dynamic route afterwards
 router.get("/:id", getTourById);
 
-router.delete('/tourReservations/:id', deleteTourReservation);
+// routes/reservation.route.js
+
+router.delete("/tourReservations/:id", deleteTourReservation); // Delete reservation
+
+
 
 
 

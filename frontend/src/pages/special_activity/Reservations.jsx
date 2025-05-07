@@ -100,11 +100,22 @@ function ReservationPage() {
 
     // ✅ Function to delete a tour reservation
     const deleteTourReservation = async (id) => {
+        const confirmDelete = window.confirm("Are you sure you want to delete this tour reservation?");
+        if (!confirmDelete) return;
+    
+        console.log("Deleting reservation ID:", id);
+    
         try {
-            await axios.delete(`/tours/tourReservations/${id}`);
-            setTourReservations(prev => prev.filter(r => r._id !== id));
+            const response = await axios.delete(`/tours/tourReservations/${id}`);
+            if (response.status === 200) {
+                setTourReservations(prev => prev.filter(r => r._id !== id));
+                alert("Reservation deleted successfully");
+            } else {
+                alert("Failed to delete reservation");
+            }
         } catch (error) {
             console.error("Error deleting tour reservation:", error);
+            alert("An error occurred while deleting the reservation.");
         }
     };
     
