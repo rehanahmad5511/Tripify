@@ -24,7 +24,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const result = await Swal.fire({
-      title: "Do You want to signup with Travely?",
+      title: "Do You want to signup with Tripify?",
       showDenyButton: true,
       showCancelButton: true,
       confirmButtonText: "Save",
@@ -106,7 +106,7 @@ const Register = () => {
         });
 
         Swal.fire(
-          "Congratulations! You Have Successfully Registered with Travely",
+          "Congratulations! You Have Successfully Registered with Tripify",
           "",
           "success"
         );
@@ -122,7 +122,7 @@ const Register = () => {
         });
 
         Swal.fire(
-          "Congratulations! You Have Successfully Registered with Travely",
+          "Congratulations! You Have Successfully Registered with Tripify",
           "",
           "success"
         );
@@ -239,19 +239,14 @@ const Register = () => {
             </div>
             <div className="mb-6">
               <div className="relative">
-                <select
-                  id="type"
-                  value={type}
-                  onChange={(e) => setType(e.target.value)}
-                  className="block text-base bordder-[#E9EDF4] border appearance-none w-full py-3 px-5   bg-[#FCFDFE] rounded-3xl  border-slate-300 focus:outline-none focus:ring"
-                >
-                  <option value="traveler">Traveler</option>
-                  <option value="hotelOwner">Hotel Owner</option>
-                  <option value="vehicleOwner">Vehicle Owner</option>
-                  <option value="resturentOwner">Resturent Owner</option>
-                  <option value="tourGuide">Tour Guide</option>
-                  <option value="eventOrganizer">Event Organizer</option>
-                </select>
+              <div className="mb-6">
+  <input
+    type="text"
+    value="Traveler"
+    readOnly
+    className="w-full rounded-3xl border bg-gray-100 py-3 px-5 text-base text-gray-700"
+  />
+</div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg
                     className="fill-current h-4 w-4"
