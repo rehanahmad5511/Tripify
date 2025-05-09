@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Component to display car reservation
 function CarReservation({ reservation, onCancel }) {
@@ -118,7 +119,7 @@ function ReservationPage() {
             alert("An error occurred while deleting the reservation.");
         }
     };
-    
+
     return (
         <>
             <div className="bg-[#DEEFFF] flex items-center justify-between w-full flex-col lg:flex-row">
@@ -148,6 +149,14 @@ function ReservationPage() {
                     >
                         Tour
                     </button>
+                    <Link
+                        to="/train/MyTickets"
+                        className={`px-4 py-2 rounded-lg font-semibold ${
+                            activeTab === "train" ? "bg-blue-500 text-white" : "bg-gray-200"
+                        }`}
+                    >
+                        Train
+                    </Link>
                 </div>
 
                 {/* Content */}
@@ -163,16 +172,20 @@ function ReservationPage() {
                             />
                         ))
                     )
-                ) : tourReservations.length === 0 ? (
-                    <p>No tour reservations found.</p>
+                ) : activeTab === "tour" ? (
+                    tourReservations.length === 0 ? (
+                        <p>No tour reservations found.</p>
+                    ) : (
+                        tourReservations.map((reservation) => (
+                            <TourReservation
+                                key={reservation._id}
+                                reservation={reservation}
+                                onDelete={deleteTourReservation}
+                            />
+                        ))
+                    )
                 ) : (
-                    tourReservations.map((reservation) => (
-                        <TourReservation
-                            key={reservation._id}
-                            reservation={reservation}
-                            onDelete={deleteTourReservation} // ✅ pass delete function
-                        />
-                    ))
+                    <p>Train reservations will be displayed here.</p> // Placeholder for Train tab
                 )}
             </div>
         </>
