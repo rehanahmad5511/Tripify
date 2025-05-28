@@ -1,33 +1,26 @@
-# Project Name - Tourism and Travel management system (Travely)
+# Tripify
 
-*Original one is integrated in SLIIT organization's private repository
-
-Travely Live Website - https://travelylk.netlify.app/
 
 (Frontend hosted using Netlify and Heroku used for backend)
 
-We have successfully completed our Second-year, Second-semester ITP project using the MERN stack. Travely is a comprehensive Travel and Tourism website that offers convenient features such as Vehicle Reservations, Hotel Reservations(Not Included in the live website), Tour Packages, Restaurants, Train Bookings, and Event Bookings, all consolidated in one platform. To style our website, we employed Tailwind CSS. We diligently adhered to the Agile methodology throughout the project, ensuring efficient development. Furthermore, we leveraged GitHub for seamless system integration."
+I have successfully completed this project using the MERN stack. Tripify is a comprehensive Travel and Tourism website that offers convenient features such as Vehicle Reservations, Hotel Reservations, Tour Packages, Restaurants, Train Bookings, and Event Bookings, all consolidated in one platform. To style our website, I employed Tailwind CSS. We diligently adhered to the Agile methodology throughout the project, ensuring efficient development. Furthermore, I leveraged GitHub for seamless system integration."
 
-Team :
-Isuru Madusanka (Leader) - User Management
+# Screenshots
 
-Ishara Madusanka - Tour Package Management
+![Image](https://github.com/user-attachments/assets/3eeabeb6-b1c3-4cc9-bc22-2e995b7b4f09)
+![Image](https://github.com/user-attachments/assets/17adcda1-b20c-4a25-87a8-93f5fc219edc)
+![Image](https://github.com/user-attachments/assets/583449d0-1391-44eb-ad67-e8c29722b5ad)
+![Image](https://github.com/user-attachments/assets/74fff810-4b83-4914-92e5-1f89ed46c094)
+![Image](https://github.com/user-attachments/assets/aff6dce8-8ef3-4240-aa0c-04c97a25517d)
+![Image](https://github.com/user-attachments/assets/41ffbeef-17d4-4b31-8294-014813483a97)
+![Image](https://github.com/user-attachments/assets/50d6d587-b881-4e42-85bb-53626ff18cfc)
+![Image](https://github.com/user-attachments/assets/a1d2bee4-a40d-484b-bb7d-f77eae0450e1)
+![Image](https://github.com/user-attachments/assets/a3446942-f5a9-4bf5-83db-42a1d28e4c5e)
+![Image](https://github.com/user-attachments/assets/de170042-2a7a-4c69-b29d-b78e358e3745)
+![Image](https://github.com/user-attachments/assets/acd65256-470e-4d22-bdab-7df0e676dffb)
+![Image](https://github.com/user-attachments/assets/83b557d5-4711-481b-a0a7-9dc66c047ba2)
 
-Yasiru Deshan - Vehicle Reservation
 
-Chamith Kavinda - Hotel Reservation
-
-Sehan Arandara - Train Booking
-
-Dinidu Ekanayaka - Inquiry Management
-
-Hansika Sumanasekara - Event Management
-
-Supuni Navindi - Restaurant Management
-
-![IMG_4269](https://github.com/IsuruX98/Travely/assets/104721314/6363b329-bf0d-4f96-82fe-add9268a8f23)
-
-![IMG_4270](https://github.com/IsuruX98/Travely/assets/104721314/b20d6154-216b-49f7-bd3a-3ca4d6d6313d)
 
 
 
